@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Title from './Title';
-import {FaCocktail,FaHiking,FaShuttleVan,FaBeer,FaSpa,FaWifi} from "react-icons/fa";
+import {FaCocktail,FaHiking,FaBeer,FaSpa} from "react-icons/fa";
 
 export default class Services extends Component {
 
@@ -9,32 +9,22 @@ export default class Services extends Component {
             {
                 icon:<FaCocktail/>,
                 title:"free cocktails",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
+                info:"No amount of physical contact could match the healing powers of a well made cocktail."
             },
             {
                 icon:<FaHiking/>,
                 title:"Endless Hiking",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
-            },
-            {
-                icon:<FaShuttleVan/>,
-                title:"free shuttle",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
+                info:"Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you are climbing it."
             },
             {
                 icon:<FaBeer/>,
                 title:"strongest Beer",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
+                info:"A fine beer may be judged with only one sip,But it's better to be thoroughly sure."
             },
             {
                 icon:<FaSpa/>,
                 title:"Best Spa",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
-            },
-            {
-                icon:<FaWifi/>,
-                title:"Free Wifi",
-                info:"Non fugiat pariatur eiusmod magna. Minim irure irure esse eu laboris occaecat."
+                info:"Rest and your energy will be restored."
             }
         ]
     }

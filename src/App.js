@@ -2,6 +2,7 @@ import './App.css';
 import { Route ,Switch} from 'react-router-dom'
 import Home from './pages/Home';
 import Room from './pages/Room';
+import ContactUs from './pages/ContactUs';
 import SingleRoom from './pages/SingleRoom';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
@@ -15,9 +16,9 @@ function App() {
     <Route path="/rooms/:slug" exact component={SingleRoom}/>
     <Route component={Error}/>
     </Switch>
+    <ContactUs/>
 
     </>
   );
 }
-
 export default App;

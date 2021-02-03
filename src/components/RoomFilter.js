@@ -10,7 +10,7 @@ export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
     const {handleChange,type,capacity,price,minPrice,maxPrice,minSize,maxSize,breakfast,pets} = context;
 
-    console.log(context);
+    //console.log(context);
 
     //get unique types
     let types = getUnique(rooms,'type');
@@ -74,13 +74,7 @@ export default function RoomFilter({rooms}) {
                     </div>
                 </div>
                 {/*end of Check boxs*/}
-
-
-
-
-
             </form>
-          
         </section>
     )
 }

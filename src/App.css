@@ -15,6 +15,10 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
+html{
+  scroll-behavior: smooth;
+}
 /* globals */
 body {
   padding-top: 66px;
@@ -88,16 +92,16 @@ h6 {
 }
 /* end of globals */
 /* Navbar */
-.navbar {
+.navbars {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
   background: var(--offWhite);
-  z-index: 1;
+  z-index: 9999;
 }
-.nav-header {
+.nav-headers {
   display: flex;
   justify-content: space-between;
 }
@@ -124,7 +128,7 @@ h6 {
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
@@ -139,7 +143,7 @@ h6 {
   .nav-btn {
     display: none;
   }
-  .nav-center {
+  .nav-centers {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -159,14 +163,14 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
-  min-height: 60vh;
+  background-image: url("./images/roomshero.jpg");
+  min-height: 80vh;
 }
 /* End of Hero */
 /* Banner */
@@ -213,6 +217,10 @@ h6 {
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.title{
+  font-weight: 700;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -359,6 +367,12 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
+
+.check{
+  color:white;
+  font-size:inherit;
+  margin-right: 0.5rem;
+}
 /* end of room  */
 /* single room*/
 
@@ -390,24 +404,30 @@ h6 {
 .desc h3 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+
 }
 .desc p {
   line-height: 1.5;
+  margin-top: 1rem;
 }
 .info h3,
 .info h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-
 .info h6 {
   font-weight: 300;
 }
+
+.first{
+  margin-top: 1rem;
+}
+
 .room-extras {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-extras h6 {
+.room-extras h3 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -417,6 +437,7 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 992px) {
   .single-room-images,
@@ -512,3 +533,223 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+
+/*Contact Us*/
+.area {
+  position: relative;
+  z-index: 1;
+}
+.foo_top_header_one {
+  background-color: #15151e;
+  color: #fff;
+}
+.section_padding_100_70 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+.foo_top_header_one {
+  color: #fff;
+}.part {
+  margin-bottom: 30px;
+}
+.foo_top_header_one .part > h5 {
+  color: #fff;
+}
+.part h4, .part h5 {
+  margin-bottom: 30px;
+}
+.single_contact_info > p, .single_contact_info > h5, .blog_area > a, .foo_top_header_one .part > p {
+  color: rgba(255,255,255,.5);
+}
+p, ul li, ol li {
+  font-weight: 300;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.bottom_header_one {
+  background-color: #111;
+}
+.section_padding_50 {
+  padding: 20px 0;
+}
+.bottom_header_one p {
+  color: #fff;
+  margin: 0;
+}
+p, ul li, ol li {
+  font-weight: 300;
+}
+.bottom_header_one a {
+  color: inherit;
+  font-size: 14px;
+}
+
+.m-top-15 {
+  margin-top: 15px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.widget > li {
+  display: inline-block;
+  
+}
+p, ul li, ol li {
+  font-weight: 300;
+}
+ol li, ul li {
+  list-style: outside none none;
+}
+.widget a {
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #888;
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 4px;
+  padding: 7px 12px;
+  text-decoration: none;
+  margin-right: 0.2rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.links a {
+  border-bottom: 1px solid #333;
+  color: rgba(255,255,255,.5);
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.links a {
+  color: rgba(255,255,255,.5);
+  font-size: 13px;
+}
+top-15 {
+  margin-top: 15px;
+}
+.foo_top_header_one .part > h5 {
+  color: #fff;
+}
+.part h4, .part h5 {
+  margin-bottom: 30px;
+}
+
+.blog_area .date {
+  color: #27ae60;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.blog_area > p {
+  color: rgba(255,255,255,.5);
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.thumb {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 75px;
+}
+.links a i {
+  padding-right: 10px;
+}
+
+.footer_area {
+      position: relative;
+      z-index: 1;
+  }
+.footer_bottom p > i,
+  .footer_bottom p > a:hover {
+      color: #27ae60;
+  }	
+
+  .social_links_area {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 50px 0 30px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+  }
+.social_links_area > a:hover {
+      color: #27ae60;
+  }
+
+  .inline-style .social_links_area > a:hover {
+      background-color: transparent;
+      color: #27ae60;
+      border: 0px solid transparent;
+  }
+.single_feature:hover .feature_text h4 {
+      color: #27ae60;
+  }
+.blog_area {
+  border-bottom: 1px solid #333;
+  margin-bottom: 15px;
+  padding: 0 0 15px 90px;
+  position: relative;
+  z-index: 1;
+}
+.links a {
+  border-bottom: 1px solid #333;
+  color: rgba(255,255,255,.5);
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.fa {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background:#e95950;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.social{
+  display: flex;
+}
+.soicial-margin{
+  margin-right: 1rem;
+}
+

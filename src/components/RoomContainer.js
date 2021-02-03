@@ -3,7 +3,7 @@ import RoomsFilter from './RoomFilter';
 import RoomsList from './RoomList';
 import { withRoomConsumer } from '../context';
 import Loading from './Loading';
-import {RoomConsumer} from '../context';
+//import {RoomConsumer} from '../context';
 
 
 
@@ -31,7 +31,7 @@ import {RoomConsumer} from '../context';
 }*/
 
 
-/*here we use higher order component*/
+/*higher order component*/
 function RoomContainer({context}){
 
     const {loading,sortedRooms,rooms}=context;

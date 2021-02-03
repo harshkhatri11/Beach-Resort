@@ -2,10 +2,14 @@ import React from 'react'
 import Room from './Room';
 
 export default function RoomList({rooms}) {
-    if(rooms.length ===0){
+    if(rooms.length === 0){
         return (
             <div className="empty-search">
-                <h3>unfortunately no rooms matched your search parameters</h3>
+                <div class="ui massive negative message">
+                <div class="header">
+                     unfortunately no rooms matched with your search criteria.
+                </div>
+                </div>
             </div>
         );
     }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import defaultBcg from '../images/room-1.jpeg';
-import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import {RoomContext} from '../context';
 import StyledHero from '../components/StyledHero';
+import {FaSignInAlt,FaSignOutAlt} from 'react-icons/fa';
 export class SingleRoom extends Component {
 
     constructor(props){
@@ -16,7 +16,6 @@ export class SingleRoom extends Component {
         };
     }
     static contextType = RoomContext;
-    //componentDidMount(){}
     render() {
 
         const {getRoom} = this.context;
@@ -32,7 +31,7 @@ export class SingleRoom extends Component {
             );
         }
 
-        const {name,description,capacity,size,price,extras,breakfast,pets,images} = room;
+        const {name,description,capacity,size,price,extras,breakfast,pets,images,checkin,checkout} = room;
         const [mainImg,...defaultImg] =images;  //array destructuring of image array
         return (
             <>
@@ -50,21 +49,40 @@ export class SingleRoom extends Component {
 
                 <div className="single-room-info">
                     <article className="desc">
+                    <div class="ui blue label">
                         <h3>details</h3>
+                    </div>
                         <p>{description}</p>
                     </article>
                     <article className="info">
+
+                    <div class="ui blue label">
                         <h3>info</h3>
-                        <h6>price:${price}</h6>
+                    </div>
+
+                       
+                        <h6 className="first">price:${price}</h6>
                         <h6>size:{size} SQFT</h6>
-                        <h6>max capacity:{" "}{capacity>1?`${capacity} people`:`${capacity} person`}</h6>
+                        <h6>max capacity:{capacity>1?`${capacity} people`:`${capacity} person`}</h6>
                         <h6>{pets ? "pets allowed":"no pets allowed"}</h6>
                         <h6>{breakfast ? "breakfast included":""}</h6>
+                        <div class="ui red labels">
+                            <div class="ui label lab">
+                                <FaSignInAlt className="check"/>{checkin} PM
+                            </div>
+                        
+                            <div class="ui label lab">
+                                <FaSignOutAlt className="check"/>{checkout} AM
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>
             <section className="room-extras">
-                <h6>extras</h6>
+
+            <div class="ui blue label">
+                <h3>Extras</h3>
+            </div>
                 <ul className="extras">
                 {extras.map((item,index)=>{
                     return <li key={index}>- {item}</li> 

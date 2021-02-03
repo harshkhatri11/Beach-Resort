@@ -2,3 +2,5 @@
 #react-icons
 #Context API 
 #Styled-Components
+#contentful
+#SemanticUi
