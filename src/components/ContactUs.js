@@ -57,7 +57,7 @@ const ContactUs = () => {
                                         <div className="thumb">
                                             <img className="img-fluid" src={News1} alt="" />
                                         </div>
-                                        <a href="#">Resorts are seeing increased demand</a>
+                                        <Link to="/">Resorts are seeing increased demand</Link>
                                         <p className="date">1 Feb 2021</p>
                                     </div>
 
@@ -65,7 +65,7 @@ const ContactUs = () => {
                                         <div className="thumb">
                                             <img className="img-fluid" src={News2} alt="" />
                                         </div>
-                                        <a href="#">Beach clean up drives pick up steam in Goa</a>
+                                        <Link to="/">Beach clean up drives pick up steam in Goa</Link>
                                         <p className="date">29 Jan 2021</p>
                                     </div>
 
@@ -73,7 +73,7 @@ const ContactUs = () => {
                                         <div className="thumb">
                                             <img className="img-fluid" src={News3} alt="" />
                                         </div>
-                                        <a href="#">Lifeguards traces 5-year-old missing girl on beach</a>
+                                        <Link to="/">Lifeguards traces 5-year-old missing girl on beach</Link>
                                         <p className="date">18 Jan 2021</p>
                                     </div>
 
@@ -81,7 +81,7 @@ const ContactUs = () => {
                                         <div className="thumb">
                                             <img className="img-fluid" src={News4} alt="" />
                                         </div>
-                                        <a href="#">No new year bash due to Covid</a>
+                                        <Link to="/">No new year bash due to Covid</Link>
                                         <p className="date">29 Dec 2020</p>
 
                                     </div>
@@ -104,29 +104,29 @@ const ContactUs = () => {
 
                                     <ul className="social">
                                         <li className="soicial-margin">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fa fa-facebook"><FaFacebookF /></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="soicial-margin">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fa fa-twitter"><FaTwitter /></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="soicial-margin">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fa fa-google"><FaGoogle /></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="soicial-margin">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fa fa-linkedin"><FaLinkedinIn /></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="soicial-margin">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fa fa-instagram"><FaInstagram /></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -138,7 +138,7 @@ const ContactUs = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <p>© All Rights Reserved by <a href="#"> Beach Resort <i><FaHeart /></i></a></p>
+                                <p>© All Rights Reserved by <Link to="/"> Beach Resort <i><FaHeart /></i></Link></p>
                             </div>
                         </div>
                     </div>
