@@ -43,7 +43,7 @@ export class SingleRoom extends Component {
             <section className="single-room">
                 <div className="single-room-images">
                 {defaultImg.map((item,index)=>{
-                    return <img key={index} src={item} alt={name}/>
+                    return <img key={index} src={item} alt={name} className="resonsive_img"/>
                 })}
                 </div>
 
