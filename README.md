@@ -12,7 +12,7 @@
 ## 🌐 Live Demo
 
 <p align="center">
-  <a href="https://your-netlify-or-vercel-link.com" target="_blank">
+  <a href="https://beachresort11.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀 Live Demo-Click to Visit-blue?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo Link" />
   </a>
 </p>
